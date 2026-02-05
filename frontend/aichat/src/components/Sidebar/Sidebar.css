@@ -1,0 +1,46 @@
+.container-sidebar{
+    background-color: #343434;
+    width: 280px;
+    position: relative;
+    height: 95.5vh;
+    padding: 20px 0;
+}
+
+.new-chat{
+    text-align: center;
+}
+.new-chat button{
+    background-color: transparent;
+    border: 1px solid #fff;
+    color: #fff;
+    padding: 8px 16px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 1rem;
+    outline: none;
+}   
+
+.new-chat button:hover{
+    background-color: #404040;
+    transition: .2s ease;
+}
+
+.infos{
+    text-align: center;
+    position: absolute;
+    bottom: 16px;
+    width: 100%;
+}
+
+.infos button{
+    background-color: transparent;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    font-size: 1rem;
+    outline: none;
+}
+.infos hr{
+    border: 1px solid #fff;
+    margin-bottom: 12px;
+}

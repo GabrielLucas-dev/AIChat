@@ -1,0 +1,105 @@
+.container-main{
+    width: 100%;
+    min-height: 100vh;
+}
+
+.inner-main{
+    position: fixed;
+    top: 25%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 480px;
+}
+.main-title{    
+    text-align: center;
+}
+
+.actions{
+    display: flex;
+    width: 100%;
+    gap: 6px;
+    margin: 10px 0;
+}
+
+.div-message{
+    flex: 1;
+}
+
+.div-message .message{
+    width: 100%;
+    height: 30px;
+    padding: 8px;
+    font-size: 1rem;
+    outline: none;
+    border: none;
+    border-bottom: 1px solid #fff;
+    background-color: transparent;
+    color: #fff;
+}
+
+.div-btn-submit button{
+    border-radius: 16px;
+    border: none;
+}
+
+.div-btn-submit button .submit-btn{
+    padding: 8px;
+    cursor: pointer;
+}
+
+.div-btn-submit button:hover{
+    background-color: #c9c9c9;
+    transition: .2s ease;
+}
+
+.sidebar-btn{
+    padding: 3px 0px 3px 4px;
+}
+.sidebar-btn button{
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    color: #fff;
+    font-size: 1.25rem;
+    border-radius: 20px;
+    padding: 6px;
+    outline: none;
+}
+
+.sidebar-btn button:hover{
+    background-color: #404040;
+    transition: .2s ease;
+}
+
+.sidebar-icon{
+    font-weight: 100;
+}
+
+.hide-sidebar{
+    position: relative;
+    left: -280px;
+    animation: slideOut 0.2s;
+}
+.active{
+    position: relative;
+    left: 0px;
+    animation: slideIn 0.2s;
+}
+
+@keyframes slideIn {
+    from {
+        left: -280px;
+    }
+    to {
+        left: 0px;
+    }
+}
+
+@keyframes slideOut {
+    from {
+        left: 0px
+    }
+    to {
+        left: -280px;
+    }
+}
