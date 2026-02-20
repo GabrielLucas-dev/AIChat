@@ -17,13 +17,17 @@ function MainContent() {
 
   const [inputValue, setInputValue] = useState("");
   const [resposta, setResposta] = useState("");
+  const [api, setApi] = useState('')
 
   async function handleSubmit() {
     try {
-      if (inputValue != "") {
-        const response = await respostaGemini(inputValue);
+      if(api === "") return alert("Coloque uma chave de API valida!")
+        
+      if (inputValue !== "" || api !== "") {
+        const response = await respostaGemini(inputValue, api);
         setResposta(response);
       }
+
     } catch (error) {
       console.log("ERRO FRONT: ", error);
     }
@@ -45,6 +49,12 @@ function MainContent() {
             <Sidebar />
           </div>
         </div>
+
+        <div className="container-api">
+          <p className="api-title">Coloque a sua Gemini API KEY </p>
+          <input type="text" onChange={(e) => setApi(e.target.value)}/>
+          <p>Não sabe como? <a href="https://ai.google.dev/gemini-api/docs/api-key?hl=pt-br" className="api-link">Clique aqui</a></p> 
+        </div>   
 
         <div className="inner-main">
           <div className="main-title">

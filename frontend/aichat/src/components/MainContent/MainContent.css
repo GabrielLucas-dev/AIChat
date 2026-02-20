@@ -3,9 +3,37 @@
     min-height: 100vh;
 }
 
+.container-api{
+    position: fixed;
+    top: 8%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 360px;
+    text-align: center;
+}
+
+.container-api .api-title{
+    font-size: 1.25rem;
+}
+
+.container-api input{
+    border: none;
+    padding: 4px 6px; 
+    width: 100%;
+    border-radius: 8px;
+    margin: 4px 0;
+    outline: none;
+    font-size: 1rem;
+}
+
+.api-link{
+    color: #fff;
+    font-size: 1.1rem;
+}
+
 .inner-main{
     position: fixed;
-    top: 25%;
+    top: 30%;
     left: 50%;
     transform: translate(-50%, -50%);
     width: 560px;
